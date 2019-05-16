@@ -36,8 +36,9 @@ This profile allows two ILP nodes to utilize a previously agreed-upon shared-sec
 
 ### Example Usage
 An example shared-secret in this profiles is `HEiMCp0FoAC903QHueY89gAWJHo/izaBnJU8/58rlSI=`. The shared secret is 
-passed as an `Authorization` header in each HTTP request, using the Bearer token scheme, like 
-this: `Authorization: Bearer HEiMCp0FoAC903QHueY89gAWJHo/izaBnJU8/58rlSI=`. 
+passed as an `Authorization` header in each HTTP request, using the Bearer token scheme, like this: 
+
+`Authorization: Bearer HEiMCp0FoAC903QHueY89gAWJHo/izaBnJU8/58rlSI=`. 
 
 Because tokens in this profile do not inherently contain any information about the identity of the authentication 
 request, callers using this profile MUST add an additional HTTP request header named `Auth-Principal` to each request. 
