@@ -16,9 +16,9 @@ This document defines several Authentication profiles for Interledger Nodes oper
 find this balance. This document also describes and clarifies some token-security best practices for Interledger Nodes.
 
 ## Overview
-This RFC defines the following profiles, each of which allows two ILP nodes to define and agree upon a shared-secret 
-containing at least 32 bytes (256 bits) that can be used to authenticate the other party in an ILP-over-HTTP peering 
-relationship. 
+This RFC defines the following profiles, each of which allows two ILP nodes to utilize a previously agreed-upon 
+shared-secret containing at least 32 bytes (256 bits) that can be used to authenticate the other party in an 
+ILP-over-HTTP peering relationship. 
 
 * `SIMPLE`: Allows two ILP nodes to utilize a previously agreed-upon shared-secret as a Bearer token in all ILP-over-HTTP 
 requests. Peers SHOULD consider this token to be opaque and SHOULD NOT derive any special meaning from the token. 
