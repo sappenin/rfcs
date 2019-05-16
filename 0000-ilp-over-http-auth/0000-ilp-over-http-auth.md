@@ -42,9 +42,10 @@ passed as an `Authorization` header in each HTTP request, using the Bearer token
 
 Because tokens in this profile do not inherently contain any information about the identity of the authentication 
 request, callers using this profile MUST add an additional HTTP request header named `Auth-Principal` to each request. 
-This allows for the identity of the authentication to be separated from authentication token itself. This is important
- so that implementations do not have to create data-store indexes using secure data, which might involve extra computational
- overhead. Depending on the implementation, the value of this header might represent an `ILP Account Id` or an `ILP Peer Id`.
+This allows for the identity of the authentication to be separated from authentication token itself, which is important
+ so that implementations do not have to create data-store indexes using derivations of secure data, which might involve 
+ extra computational overhead as well as data-management complexity. Depending on the implementation, the value of this 
+ header might represent an `ILP Account Id` or an `ILP Peer Id`.
 
 Implementations MAY support this profile, but SHOULD consider it for development purposes only.
  
